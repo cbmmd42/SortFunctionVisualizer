@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sortFunctionVisualizer/static/css/main.07ef7cd8.chunk.css",
+    "main.css": "/sortFunctionVisualizer/static/css/main.12b751ab.chunk.css",
     "main.js": "/sortFunctionVisualizer/static/js/main.f43d2a8a.chunk.js",
     "main.js.map": "/sortFunctionVisualizer/static/js/main.f43d2a8a.chunk.js.map",
     "runtime-main.js": "/sortFunctionVisualizer/static/js/runtime-main.14b303fe.js",
@@ -8,14 +8,14 @@
     "static/js/2.541bf579.chunk.js": "/sortFunctionVisualizer/static/js/2.541bf579.chunk.js",
     "static/js/2.541bf579.chunk.js.map": "/sortFunctionVisualizer/static/js/2.541bf579.chunk.js.map",
     "index.html": "/sortFunctionVisualizer/index.html",
-    "precache-manifest.52df24c85d0687bf9aa6f0b4e1f7512b.js": "/sortFunctionVisualizer/precache-manifest.52df24c85d0687bf9aa6f0b4e1f7512b.js",
+    "precache-manifest.27eaaedc5e6af904910cf126926e48b9.js": "/sortFunctionVisualizer/precache-manifest.27eaaedc5e6af904910cf126926e48b9.js",
     "service-worker.js": "/sortFunctionVisualizer/service-worker.js",
-    "static/css/main.07ef7cd8.chunk.css.map": "/sortFunctionVisualizer/static/css/main.07ef7cd8.chunk.css.map"
+    "static/css/main.12b751ab.chunk.css.map": "/sortFunctionVisualizer/static/css/main.12b751ab.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.14b303fe.js",
     "static/js/2.541bf579.chunk.js",
-    "static/css/main.07ef7cd8.chunk.css",
+    "static/css/main.12b751ab.chunk.css",
     "static/js/main.f43d2a8a.chunk.js"
   ]
 }
