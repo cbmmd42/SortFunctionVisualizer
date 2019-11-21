@@ -1,0 +1,60 @@
+body {
+  background-color: #282c34;
+  color: white;
+}
+
+hr {
+  border-color: #ff6a00;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.hidden {
+  display:none;
+}
+
+
+#description {
+  
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  
+}
+
+#description li {
+  text-align: left;
+}
+
+select{ 
+  border:none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+  
+}
+
+button {
+  width: 20vw;
+  height: 6vw;
+  font-size: 3vw;
+  font-family: 'Times New Roman', Times, serif;;
+}

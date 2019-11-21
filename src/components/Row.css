@@ -1,0 +1,12 @@
+
+.sortTable {
+    display:inline-block;
+    background-color: #282c34;    
+    width: 100vw;
+    height: 10vw;
+    padding: 0vw;    
+}
+/*
+td {
+    width: 10%;    
+}*/
