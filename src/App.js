@@ -25,7 +25,7 @@ class App extends React.Component {
       numberOfItems: '10',
       sortAlgorithmType: 'bubble sort', 
       items: initialArray, 
-      swapRate: 150, 
+      swapRate: 210, 
       sorting: false
     }; 
   }
@@ -44,6 +44,8 @@ class App extends React.Component {
       tempArr[i] = new Item(i+1,i);
     }
     this.setState({items: tempArr});
+    //set sqap rate
+      this.setState({swapRate: 2100/tempArr.length});
     
   }  
   
@@ -88,6 +90,7 @@ class App extends React.Component {
     document.getElementById("stopBtn").classList.add("hidden");
     document.getElementById("sortBtn").classList.remove("hidden");
     document.getElementById("nidropdown").disabled = false;
+    document.getElementById("myRange").disabled = false;
     this.setState({sorting:false});
     
     setTimeout(() => {
@@ -100,6 +103,7 @@ class App extends React.Component {
     document.getElementById("stopBtn").classList.remove("hidden"); 
     
     document.getElementById("nidropdown").disabled = true;
+    document.getElementById("myRange").disabled = true;
 
     this.setState({sorting: true});
   }
@@ -134,13 +138,20 @@ class App extends React.Component {
     
   }
 
+  slidebar = (e) => {
+    e.preventDefault();
+    this.setState({swapRate: document.getElementById("myRange").value});
+    console.log(document.getElementById("myRange").value);
+  }
+
   render() {
     console.log("App Render called");
     //console.log(this.state.items);
     return (
       <div className="App">
         <TopBar SAcallBack = {this.callback_SADropdown} NIcallBack = 
-        {this.callback_NIDropdown} ITcallBack = {this.callback_ITDropdown}/>        
+        {this.callback_NIDropdown} ITcallBack = {this.callback_ITDropdown}/>  
+        <form>Faster<input type="range" id="myRange" value={this.state.swapRate} min="70" max="200" onChange={this.slidebar}></input>Slower</form>      
         <hr></hr>
         <Row items={this.state.items} CBchangeItem={this.changeItemRandomly}/>
 
@@ -148,27 +159,6 @@ class App extends React.Component {
         <button id="sortBtn" onClick={ this.sort }>Sort Items </button>
         <button id="stopBtn" className="hidden" onClick={ this.stopSorting }>Stop </button>
         <hr></hr>
-
-        <div id="description">
-          <h2>Description</h2>
-            <p>This project gives a visual representation of the inner 
-              workings of various sorting algorithms. By displaying each swap,
-               one is better able to see the efficiency (or inefficiency) of an 
-               algorithm. As the selected algorithm iterates through the list, 
-               the elements are highlighted in blue. While the swapped elements 
-               are highlighted in red. The quicksort algorithm is much more 
-               efficient than the bubblesort algorithm as is made evident by 
-               the number of iterations through the list.
-            </p>
-            <p>Run the bubblesort algorithm followed by the quicksort algorithm to 
-               see for yourself!
-            </p>
-          <ul>
-            <li>Project written in Javascript using React as a framework</li>
-            <li>User interaction through Javascript mouse events</li>
-            <li>CSS Animations and Transitions</li>
-          </ul>
-        </div>
         
       </div>
     );
