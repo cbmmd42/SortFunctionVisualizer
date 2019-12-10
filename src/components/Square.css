@@ -36,7 +36,7 @@
 }
 
 .touch {
-    border-color:rgb(82, 94, 255);
+    border-color:tomato;
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 0.1s; /* Safari 4.0 - 8.0 */
@@ -77,7 +77,7 @@
 }
 
 #selected {
-    background-color: royalblue;
+    background-color: tomato;
 }
 
 

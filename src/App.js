@@ -44,9 +44,6 @@ class App extends React.Component {
       tempArr[i] = new Item(i+1,i);
     }
     this.setState({items: tempArr});
-    //set sqap rate
-      this.setState({swapRate: 2100/tempArr.length});
-    
   }  
   
   sort = (e) => {
