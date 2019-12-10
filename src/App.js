@@ -25,7 +25,7 @@ class App extends React.Component {
       numberOfItems: '10',
       sortAlgorithmType: 'bubble sort', 
       items: initialArray, 
-      swapRate: 210, 
+      swapRate: 135, 
       sorting: false
     }; 
   }
