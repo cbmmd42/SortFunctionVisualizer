@@ -2,9 +2,10 @@
   "name": "sort_function_visualizer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michaelgjohnson.com/sortvisualizer",
+  "homepage": "https://app.michaelgjohnson.com/sort-function-visualizer",
   "dependencies": {
     "express": "^4.17.1",
+    "pm2": "^4.2.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"
