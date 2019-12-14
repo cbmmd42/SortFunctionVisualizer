@@ -5,6 +5,7 @@ import './App.css';
 
 import bubbleSort from './sortingAlgorithms/bubblesort';
 import quickSort from './sortingAlgorithms/quicksort';
+import selectionSort from './sortingAlgorithms/selectionsort';
 
 import Item from './objects/item';
 
@@ -55,7 +56,11 @@ class App extends React.Component {
     }else if(this.state.sortAlgorithmType == 'quick sort') {
       outputArray = quickSort(JSON.parse(JSON.stringify(this.state.items)),
        0, this.state.items.length - 1, outputArray);
-    }    
+    }else if(this.state.sortAlgorithmType == 'selection sort') {
+      //console.log(JSON.parse(JSON.stringify(this.state.items)));
+      outputArray = selectionSort(JSON.parse(JSON.stringify(this.state.items)));
+      //console.log(this.state.items);
+    }        
     this.renderArray(outputArray) 
   }
 
@@ -103,6 +108,7 @@ class App extends React.Component {
     document.getElementById("myRange").disabled = true;
 
     this.setState({sorting: true});
+    console.log(this.state.sortAlgorithmType);
   }
 
   renderArray = (outputArray) => {

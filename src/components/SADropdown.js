@@ -19,7 +19,8 @@ class SADropdown extends React.Component {
                 <label>Sorting Algorithm </label>
                     <select id="sadropdown" value = {this.state.value} onChange = {this.handleChange}>
                         <option value = "bubble sort">Bubble Sort</option>
-                        <option value = "quick sort">Quick Sort</option>                    
+                        <option value = "quick sort">Quick Sort</option> 
+                        <option value = "selection sort">Selection Sort</option>                    
                     </select>         
             </div>            
         );
